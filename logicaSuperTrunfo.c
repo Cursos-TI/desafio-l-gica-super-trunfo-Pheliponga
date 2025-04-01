@@ -33,7 +33,7 @@ int main() {
     scanf("%lu", &populacao1_1);
 
     printf("\n- ÁREA: ");
-    scanf("%f", &area1_1);
+    scanf("%.3f", &area1_1);
 
     printf("\n- PIB: ");
     scanf("%f", &pib1_1);
@@ -69,7 +69,7 @@ int main() {
     scanf("%lu", &populacao2_1);
 
     printf("\n- ÁREA: ");
-    scanf("%f", &area2_1);
+    scanf("%.3f", &area2_1);
 
     printf("\n- PIB: ");
     scanf("%f", &pib2_1);
@@ -83,37 +83,20 @@ int main() {
     dp2_1 = populacao2_1 / area2_1;
     capita2_1 = pib2_1 / populacao2_1;  
 
-
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
+    /*Anunciação da ação que acontecerá*/
+    
     printf("\n**Comparação de Cartas (Atributo: População)\n");
 
-    printf("\nCarta 1 - %s: %lu de habitantes", cidade1_1, populacao1_1);
-    printf("\nCarta 2 - %s: %lu de habitantes", cidade2_1, populacao2_1);
+    printf("\nCarta 1 - %s: %lu habitantes", cidade1_1, populacao1_1);
+    printf("\nCarta 2 - %s: %lu habitantes\n", cidade2_1, populacao2_1);
 
+    /* Comparação utilizando IF e ELSE*/
 
     if (populacao1_1 > populacao2_1){
         printf("\nResultado: Carta 1 (%s) VENCEU!!!", cidade1_1);
     } else {
         printf("\nResultado: Carta 2 (%s) VENCEU!!!", cidade2_1);
     }
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
     return 0;
 }
