@@ -89,6 +89,18 @@ int main() {
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
+    printf("\n**Comparação de Cartas (Atributo: População)\n");
+
+    printf("\nCarta 1 - %s: %lu de habitantes", cidade1_1, populacao1_1);
+    printf("\nCarta 2 - %s: %lu de habitantes", cidade2_1, populacao2_1);
+
+
+    if (populacao1_1 > populacao2_1){
+        printf("\nResultado: Carta 1 (%s) VENCEU!!!", cidade1_1);
+    } else {
+        printf("\nResultado: Carta 2 (%s) VENCEU!!!", cidade2_1);
+    }
+
     // Exemplo:
     // if (populacaoA > populacaoB) {
     //     printf("Cidade 1 tem maior população.\n");
